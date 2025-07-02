@@ -1,61 +1,116 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# Platinum Bird Nest – Website Katalog Produk Sarang Walet Premium
 
-## About Laravel
+Website ini merupakan katalog dan company profile untuk usaha sarang burung walet premium dengan brand **Platinum Bird Nest**. Dibangun dengan framework **Laravel** dan didesain dengan nuansa premium, website ini mendukung branding, promosi, serta transaksi pemesanan langsung.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 📌 Tujuan Website
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- Memberikan kesan profesional dan premium pada brand Platinum Bird Nest
+- Menampilkan informasi produk secara lengkap, foto, harga, fitur, serta label kehalalan
+- Menyediakan kanal komunikasi pemesanan langsung ke WhatsApp admin
+- Menampilkan testimoni pelanggan asli untuk meningkatkan kepercayaan
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 🚀 Fitur Utama
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### 1. Landing Page Premium
+- Desain elegan dengan kombinasi warna gelap dan emas
+- Navigasi mudah ke setiap bagian: Beranda, Tentang, Produk, Testimoni, Kontak
+- Hero section dengan highlight keunggulan produk
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 2. Image Grid Visual
+- Menampilkan foto-foto nyata: Gedung walet, Sarang walet mentah, Produk kemasan
+- Layout grid modern, responsif di berbagai device
 
-## Laravel Sponsors
+### 3. Katalog Produk
+- Daftar produk: gambar, nama, deskripsi, harga, fitur, label HALAL
+- Admin dapat mengelola produk (CRUD) lewat panel admin
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 4. Testimoni Pelanggan
+- Menampilkan testimoni dari pelanggan asli
+- Nama, lokasi, inisial, dan isi testimoni yang tersimpan di database
 
-### Premium Partners
+### 5. Halaman Admin CRUD
+- Admin login ke `/admin`
+- Tambah/Edit/Hapus produk & foto produk
+- Tambah/Edit/Hapus testimoni pelanggan
+- Keamanan akses hanya untuk admin
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### 6. Tombol Pemesanan WhatsApp
+- Fitur "Pesan via WhatsApp" langsung ke admin
 
-## Contributing
+### 7. Teknologi Modern
+- Laravel 10+, Bootstrap 5, FontAwesome
+- Docker dan docker-compose untuk deployment VPS/server
+- Database MySQL
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## 🖼️ Struktur Halaman Utama
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+1. **Header/Navigasi**
+   - Logo, menu navigasi
+2. **Hero Section**
+   - Judul utama, slogan, tombol CTA
+3. **Image Grid**
+   - 3 foto: Gedung walet, sarang walet mentah, produk kemasan
+4. **Tentang Kami**
+   - Penjelasan bisnis, keunggulan, statistik pengalaman
+5. **Katalog Produk**
+   - Daftar produk lengkap dengan detail dan foto
+6. **Testimoni**
+   - Review pelanggan asli yang pernah membeli produk
+7. **Kontak**
+   - Tombol WhatsApp untuk pemesanan/pertanyaan
+8. **Footer**
+   - Info hak cipta, logo, sosial media
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 🛠️ Cara Kerja Admin
+
+- Login ke halaman `/admin` (default)
+- Kelola data produk & testimoni
+- Semua data aman di database MySQL
+- Tidak akan hilang saat server di-restart (selama database tidak dihapus manual)
+
+---
+
+## 🎯 Manfaat Website
+
+- Meningkatkan kredibilitas & kepercayaan pelanggan baru
+- Memudahkan penjualan dan promosi digital
+- Menunjang kebutuhan portofolio untuk tugas akhir/magang
+- Fleksibel, siap dikembangkan lebih lanjut (misal: galeri video, artikel, dsb)
+
+
+---
+
+## ℹ️ Teknologi yang Digunakan
+
+- **Laravel** (PHP)
+- **Docker** (untuk deployment VPS)
+- **MySQL** (Database)
+- **Bootstrap 5** (UI Framework)
+- **FontAwesome** (Ikon)
+- **Custom CSS/JS** untuk animasi & UI
+
+---
+
+## 📝 Catatan
+
+Website ini dikembangkan sebagai project akhir/UAS dan siap digunakan secara nyata.  
+Semua data testimoni dan produk dapat diupdate lewat admin panel tanpa mengubah kode.
+
+---
+
+**Copyright © 2025 Platinum Bird Nest**
+
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+[MIT license](https://opensource.org/licenses/MIT).
